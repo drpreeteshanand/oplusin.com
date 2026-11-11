@@ -13,9 +13,9 @@ jobs:
       - name: Upload site files via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: 201.18.201.1
+          username: oplusin_com
+          password: ${{ secrets.OPLUSIN_COM }}
           server-dir: /
           local-dir: ./
           exclude: |
